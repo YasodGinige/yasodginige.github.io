@@ -1,24 +1,24 @@
-vCard - Personal Portfolio
+Yasod Ginige - Personal Portfolio
 
 # sidebar
 
-alt = Richard hanrick
-Richard hanrick
-Web developer
+alt = Yasod Ginige
+Yasod Ginige
+Cybersecurity & ML Researcher
 
 Show Contacts
 
 Email
-richard@example.com
+yasodginige98@gmail.com
 
 Phone
-+1 (213) 352-2795
++61 403352214
 
 Birthday
-June 23, 1982
+October 26, 1998
 
 Location
-Sacramento, California, USA
+Sydney, NSW, Australia
 
 # navbar
 
