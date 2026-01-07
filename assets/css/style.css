@@ -829,6 +829,81 @@ main {
   line-height: 1.6;
 }
 
+/**
+ * resume highlights 
+ */
+
+.resume-highlights { margin-top: 25px; }
+
+.highlights-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+/* Use your existing "content-card" look */
+.highlight-card {
+  position: relative;
+  background: var(--border-gradient-onyx);
+  padding: 18px;
+  border-radius: 14px;
+  box-shadow: var(--shadow-2);
+  z-index: 1;
+}
+
+.highlight-card::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--bg-gradient-jet);
+  border-radius: inherit;
+  z-index: -1;
+}
+
+/* Title row with icon */
+.highlight-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  color: var(--white-2); /* white heading */
+}
+
+/* Your reset makes ion-icon display:block; override it */
+.highlight-icon {
+  display: inline-block;
+  font-size: 18px;
+  color: var(--orange-yellow-crayola);
+  flex: 0 0 auto;
+}
+
+/* BULLETS: your reset removes bullets via li { list-style:none; } */
+.highlight-list {
+  margin: 0;
+  padding-left: 18px;          /* space for bullets */
+  list-style: disc;            /* bring bullets back */
+  color: var(--white-2);       /* make list text white */
+}
+
+.highlight-list li {
+  list-style: disc;            /* force bullets per item */
+  margin-bottom: 10px;
+  color: var(--white-2);       /* white */
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+}
+
+.highlight-list li:last-child { margin-bottom: 0; }
+
+/* Responsive: match your breakpoints */
+@media (min-width: 768px) {
+  .highlights-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+}
+
 
 /**
  * skills 
@@ -1881,56 +1956,3 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 }
 
-
-
-/*--------------------------------------------------------------------*\
-/* White text for the entire highlights section */
-.resume-highlights,
-.resume-highlights * {
-  color: #fff;
-}
-
-/* Grid + card styling */
-.resume-highlights { margin-top: 24px; }
-
-.highlights-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 16px;
-}
-
-.highlight-card {
-  padding: 16px;
-  border-radius: 14px;
-  border: 1px solid rgba(255,255,255,0.12);
-  background: rgba(255,255,255,0.03);
-}
-
-/* Title row with icon */
-.highlight-title {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 10px;
-}
-
-.highlight-icon {
-  font-size: 18px;
-}
-
-/* Force visible bullet points */
-.highlight-list {
-  margin: 0;
-  padding-left: 18px;     /* space for bullets */
-  list-style: disc;       /* bullet type */
-}
-
-.highlight-list li {
-  margin-bottom: 8px;
-  line-height: 1.5;
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-  .highlights-grid { grid-template-columns: 1fr; }
-}
