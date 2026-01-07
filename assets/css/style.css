@@ -915,6 +915,30 @@ main {
   z-index: 1;
 }
 
+/* Projects: title + indented description */
+.project-list {
+  margin: 0;
+  padding: 0;
+}
+
+.project-list dt {
+  color: var(--white-2);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-500);
+  line-height: 1.5;
+  margin-top: 12px;
+}
+
+.project-list dt:first-child { margin-top: 0; }
+
+.project-list dd {
+  margin: 4px 0 0 18px;       /* indent description */
+  color: var(--white-2);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+}
+
 .highlight-card::before {
   content: "";
   position: absolute;
