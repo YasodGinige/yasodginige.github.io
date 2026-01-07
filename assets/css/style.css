@@ -1880,3 +1880,57 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
+
+
+/*--------------------------------------------------------------------*\
+/* White text for the entire highlights section */
+.resume-highlights,
+.resume-highlights * {
+  color: #fff;
+}
+
+/* Grid + card styling */
+.resume-highlights { margin-top: 24px; }
+
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.highlight-card {
+  padding: 16px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.03);
+}
+
+/* Title row with icon */
+.highlight-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.highlight-icon {
+  font-size: 18px;
+}
+
+/* Force visible bullet points */
+.highlight-list {
+  margin: 0;
+  padding-left: 18px;     /* space for bullets */
+  list-style: disc;       /* bullet type */
+}
+
+.highlight-list li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .highlights-grid { grid-template-columns: 1fr; }
+}
