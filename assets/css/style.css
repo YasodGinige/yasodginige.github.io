@@ -848,17 +848,12 @@ main {
   margin-bottom: 14px;
 }
 
-.exp-role{ margin: 0; }
+.exp-role { font-weight: var(--fw-500); }
+.exp-org-name { font-weight: var(--fw-400); }
 
 .exp-org{
   text-align: right;
   color: var(--white-2);
-}
-
-.exp-org-name{
-  font-size: var(--fs-4);
-  font-weight: var(--fw-600);
-  line-height: 1.2;
 }
 
 .exp-dates{
@@ -886,7 +881,7 @@ main {
 }
 
 /* Only collapse header on very small screens */
-@media (max-width: 450px){
+@media (max-width: 480px){
   .exp-org{ text-align: left; }
   .exp-header{ flex-direction: column; }
 }
