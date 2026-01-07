@@ -836,7 +836,7 @@ main {
 .exp-card{
   border: 1px solid var(--jet);
   border-radius: 14px;
-  padding: 18px;
+  padding: 8px;
   background: var(--eerie-black-2);
 }
 
@@ -844,12 +844,15 @@ main {
 .exp-header{
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: 15px;
   margin-bottom: 14px;
 }
 
-.exp-role { font-weight: var(--fw-500); }
-.exp-org-name { font-weight: var(--fw-400); }
+.exp-role,
+.exp-org-name{
+  font-size: var(--fs-6);     /* “normal” size used in timeline text */
+  font-weight: var(--fw-400); /* optional: slightly less bold */
+}
 
 .exp-org{
   text-align: right;
