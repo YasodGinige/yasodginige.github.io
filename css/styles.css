@@ -181,7 +181,7 @@
 #news { margin-top: 30px; margin-bottom: 20px; }
 
 .news-box{
-  height: 137px;       /* ~5 lines visible */
+  height: 170px;       /* ~5 lines visible */
   overflow-y: auto;
   border: 1px solid #ddd;
   padding: 15px;
