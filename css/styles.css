@@ -178,27 +178,32 @@
     display: none;
 }
 
-#news {
-    margin-top: 50px;
+#news { margin-top: 50px; }
+
+.news-box{
+  height: 137px;       /* ~5 lines visible */
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
 }
 
-.news-box {
-    max-height: 120px; /* Adjusted height to fit approximately 5 bullet points */
-    overflow-y: auto; /* Ensures the box is scrollable */
-    border: 1px solid #ddd;
-    padding: 15px;
-    background-color: #f9f9f9;
-    border-radius: 5px;
+/* keep your list clean */
+.news-box ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.news-box ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+.news-box li{
+  font-size: 14px;
+  line-height: 1.5;    /* important for the 5-line calc */
+  margin: 0 0 6px 0;   /* keep tighter so more fits */
 }
 
-.news-box ul li {
-    margin-bottom: 10px;
-    font-size: 14px;
-    line-height: 1.5;
+/* optional: nicer scrolling */
+.news-box{
+  scrollbar-gutter: stable;
+  -webkit-overflow-scrolling: touch;
 }
