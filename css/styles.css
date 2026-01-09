@@ -183,8 +183,8 @@
 }
 
 .news-box {
-    max-height: 200px;
-    overflow-y: scroll;
+    max-height: 120px; /* Adjusted height to fit approximately 5 bullet points */
+    overflow-y: auto; /* Ensures the box is scrollable */
     border: 1px solid #ddd;
     padding: 15px;
     background-color: #f9f9f9;
