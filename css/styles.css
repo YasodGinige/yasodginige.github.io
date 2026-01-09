@@ -178,7 +178,7 @@
     display: none;
 }
 
-#news { margin-top: 50px; }
+#news { margin-top: 30px; margin-bottom: 20px; }
 
 .news-box{
   height: 137px;       /* ~5 lines visible */
